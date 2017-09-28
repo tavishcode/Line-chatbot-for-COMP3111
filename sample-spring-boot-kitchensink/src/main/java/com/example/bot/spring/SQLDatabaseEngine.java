@@ -38,7 +38,7 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 				return response + " " + String.valueOf(hit);
 			}
 		}
-		return null;
+		throw new Exception("NOT FOUND");
 	}
 	
 	
