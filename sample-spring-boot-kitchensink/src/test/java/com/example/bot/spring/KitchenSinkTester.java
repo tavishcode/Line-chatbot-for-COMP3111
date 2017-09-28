@@ -78,7 +78,7 @@ public class KitchenSinkTester {
 		}
 		assertThat(!thrown).isEqualTo(true);
 		//assertThat(result).isEqualTo("def");
-		assertThat(result.substring(0,result.lastIndexOf(" ")-1)).isEqualTo("who is there?");
+		assertThat(result.substring(0,result.lastIndexOf(" "))).isEqualTo("who is there?");
 		assertThat(result.substring(result.lastIndexOf(" ")+1).matches("\\d+")).isTrue();
 	}
 	
@@ -94,7 +94,7 @@ public class KitchenSinkTester {
 		}
 		assertThat(!thrown).isEqualTo(true);
 		//assertThat(result.isEqualTo("def"));
-		assertThat(result.substring(0,result.lastIndexOf(" ")-1)).isEqualTo("who is there?");
+		assertThat(result.substring(0,result.lastIndexOf(" "))).isEqualTo("who is there?");
 		assertThat(result.substring(result.lastIndexOf(" ")+1).matches("\\d+")).isTrue();
 	}
 }
